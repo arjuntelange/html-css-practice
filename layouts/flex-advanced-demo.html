@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 500px;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px black;
+            background-color: hotpink;
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            width: 120px;
+            height: 80px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+            box-shadow: 2px 2px 7px black;
+            text-align: center;
+            align-content: center;
+        }
+
+        .A {
+            flex-grow: 1;
+            flex-basis: 100px;
+        }
+
+        .B {
+            flex-grow: 2;
+        }
+
+        .cont2 {
+            width: 350px;
+        }
+
+        .D {
+            flex-shrink: 1;
+        }
+
+        .E {
+            flex-shrink: 2;
+        }
+
+        .F {
+            flex-shrink: 0;
+        }
+
+        .G {
+            flex-basis: 100px;
+        }
+
+        .H {
+            flex-basis: 150px;
+        }
+
+        .I {
+            flex-basis: 200px;
+        }
+
+        .J {
+            flex: 1;
+        }
+
+        .K {
+            flex: 2;
+        }
+
+        .L {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flex Grow Example</h2>
+
+    <div class="container">
+        <div class="box A">A</div>
+        <div class="box B">B</div>
+        <div class="box C">C</div>
+    </div>
+
+    <h2>Flex Shrink Example</h2>
+
+    <div class="container cont2">
+        <div class="box D">D</div>
+        <div class="box E">E</div>
+        <div class="box F">F</div>
+    </div>
+
+    <h2>Flex Basis Example</h2>
+
+    <div class="container">
+        <div class="box G">G</div>
+        <div class="box H">H</div>
+        <div class="box I">I</div>
+    </div>
+
+    <h2>Flex Shorthand Example</h2>
+
+    <div class="container">
+        <div class="box J">J</div>
+        <div class="box K">K</div>
+        <div class="box L">L</div>
+    </div>
+</body>
+
+</html>
