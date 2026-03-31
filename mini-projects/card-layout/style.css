@@ -66,6 +66,7 @@ body {
 }
 
 .card img:hover {
+    box-shadow: 0 0 20px black;
     transform: scale(1.1) translateY(-10px);
     transition: 0.3s ease;
 }
