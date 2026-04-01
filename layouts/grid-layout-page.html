@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Layout using CSS Grid</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            height: 100vh;
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 1fr 60px;
+            grid-template-areas: 
+                "header header"
+                "aside main"
+                "footer footer";
+        }
+
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            grid-area: header;
+            background-color: coral;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: cornflowerblue;
+        }
+
+        main {
+            grid-area: main;
+            background-color: crimson;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: darkslateblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="items">Header</header>
+        <aside class="items">Sidebar</aside>
+        <main class="items">Main Content</main>
+        <footer class="items">Footer</footer>
+    </div>
+</body>
+</html>
