@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew Property</title>
+    <style>
+
+        body {
+            padding: 10px;
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            place-items: center; 
+        }
+
+        .box {
+            margin-bottom: 40px;
+            width: 200px;
+            height: 160px;
+            background-color: rgba(0, 0, 255, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .skewed-x {
+            transform: skewX(30deg);
+        }
+
+        .skewed-y {
+            transform: skewY(30deg);
+        }
+
+        .skewed {
+            transform: skew(30deg, 30deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box normal">Normal</div>
+    <div class="box skewed-x">skewX</div>
+    <div class="box skewed-y">skewY</div>
+    <div class="box skewed">skew</div>
+
+</body>
+</html>
