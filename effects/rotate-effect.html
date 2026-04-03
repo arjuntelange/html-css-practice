@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate in CSS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            padding: 20px;
+            width: 500px;
+            height: auto;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            margin: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .A {
+            
+            transform: rotate(90deg);
+        }
+
+        .B {
+            transform: rotateX(45deg);
+        }
+
+        .C {
+            transform: rotateY(45deg);
+        }
+
+        .D {
+            transform: rotateZ(30deg);
+        }
+        .line {
+            width: 60px;
+            height: 4px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box A">
+            <div class="line"></div>
+        </div>
+        
+        <div class="box B">
+            <div class="line"></div>
+        </div>
+        
+        <div class="box C">
+            <div class="line"></div>
+        </div>
+
+        <div class="box D">
+            <div class="line"></div>
+        </div>
+    
+    </div>
+
+</body>
+</html>
