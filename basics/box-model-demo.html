@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Box Model</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 120px;
+            background-color: antiquewhite;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .border {
+            border: 2px solid chartreuse;
+        }
+
+        .border-padding {
+            border: 2px solid chartreuse;
+            padding: 20px;
+        }
+
+        .margin {
+            border: 1px solid chartreuse;
+            margin: 20px;
+        }
+
+        .normal-box {
+            width: 200px;
+            height: 120px;
+            background-color: cornflowerblue;
+        }
+
+        .model-box {
+            width: 200px;
+            height: 120px;
+            margin: 20px;
+            border: 10px solid cyan;
+            padding: 20px;
+            background-color: cornflowerblue;
+        }
+
+        .content-box {
+            width: 200px;
+            height: 120px;
+            padding: 20px;
+            border: 10px solid red;
+            box-sizing: content-box;
+        }
+
+        .border-box {
+            width: 200px;
+            height: 120px;
+            padding: 20px;
+            border: 10px solid green;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Simple Box</div>
+
+    <div class="box border">Box with border</div>
+
+    <div class="box border-padding">Box with border+padding</div>
+
+    <div class="box margin">Box with margin</div>
+    <hr>
+
+    <div class="normal-box">Normal Box</div>
+    <div class="model-box">Box With Margin, Border, Padding</div>
+    <hr>
+
+    <h3>Box Sizing Comparison</h3>
+    <div class="content-box">content-box</div>
+    <div class="border-box">border-box</div>
+</body>
+
+</html>
