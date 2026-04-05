@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h2::before{
+            content: "⭐";
+        }
+
+        h2::after{
+            content: "🔚";
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        p::first-letter{
+            font-size: 40px;
+            color: red;
+        }
+        
+        p::first-line{
+            font-weight: bold;
+        }
+
+        p::selection{
+            background: aqua;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to the world full of Legends</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores ad tenetur earum suscipit obcaecati eum ipsum dolorum deserunt harum? 
+    Nisi qui illum temporibus fugiat nemo cupiditate pariatur, consequuntur odio!</p>
+</body>
+</html>
