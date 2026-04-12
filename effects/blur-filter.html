@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blur Filter</title>
+    <style>
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 20px;
+            filter: blur(4px);
+            transition: 0.3s all ease;
+        }
+
+        img:hover {
+            filter: blur(0);
+            transform: scale(0.9);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <img class="image"
+        src="https://t3.ftcdn.net/jpg/01/63/05/14/360_F_163051432_preFOVYHJCyBF6zVk9mstRiLy0ehRO26.jpg"
+        alt="Cat image">
+
+</body>
+</html>

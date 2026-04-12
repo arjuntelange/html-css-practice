@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form UI</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 350px;
+            height: 200px;
+            padding: 20px 10px;
+            border-radius: 10px;
+            background-color: #A1A1A1;
+            box-shadow: 5px 7px 10px #262626;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        input {
+            width: 60%;
+            padding: 5px;
+            height: auto;
+            margin-bottom: 10px;
+            border: none;
+            box-shadow: 2px 3px 8px #52525C;
+            border-radius: 5px;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #007bff;
+        }
+
+        button {
+            width: 30%;
+            height: 30px;
+            background-color: #007bff;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 2px 3px 8px #262626;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" class="username" placeholder="Username">
+        <input type="password" class="password" placeholder="Password">
+        <button>Submit</button>
+    </div>
+</body>
+
+</html>

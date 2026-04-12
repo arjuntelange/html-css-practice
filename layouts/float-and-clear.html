@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear Practice</title>
+
+    <style>
+        .box {
+            width: 120px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 10px;
+            text-align: center;
+            background-color: aqua;
+            line-height: 80px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .clear-both {
+            clear: both;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box left">Float Left</div>
+    <div class="box right">Float Right</div>
+
+    <p>
+        This text will wrap around the floated boxes until clear is applied. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum, 
+        est eveniet iste provident quia autem enim quo ipsum soluta aspernatur voluptas assumenda voluptatum iure,
+        nemo cupiditate nulla dignissimos adipisci!
+    </p>
+
+    <div class="box clear-both">Clear Both</div>
+</body>
+
+</html>

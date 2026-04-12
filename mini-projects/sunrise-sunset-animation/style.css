@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.sky {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to top, #001d3d, #003566);
+}
+
+.sky::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #00c3ff, #87ceeb);
+    opacity: 0;
+    animation: skyFade 8s linear infinite alternate;
+}
+.sun {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ffd700, #ffa500);
+    position: absolute;
+    border-radius: 50%;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: rise 8s ease-in-out infinite alternate;
+}
+
+.glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, rgba(255, 200, 0, 0.4), transparent);
+    animation: glowPulse 3s ease-in-out infinite alternate;
+}
+
+img {
+    position: absolute;
+    top: 50px;
+    left: -50%;
+    z-index: 10;
+    width: 500px;
+    height: auto;
+    animation: Cloud-Movement 8s linear infinite alternate;
+}
+
+@keyframes Cloud-Movement {
+    from {
+        left: -50%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes skyFade {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rise {
+    0% {
+        bottom: -120px;
+    }
+
+    100% {
+        bottom: 70%;
+    }
+}
+
+@keyframes glowPulse {
+    from {
+        opacity: 0.3;
+        transform: translateX(-50%) scale(0.8);
+    }
+    to {
+        opacity: 0.7;
+        transform: translateX(-50%) scale(1.2);
+    }
+}

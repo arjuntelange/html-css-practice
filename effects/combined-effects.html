@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Effects</title>
+    <style>
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            padding: 20px;
+            width: 100%;
+            max-width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            opacity: 0.8;
+            filter: grayscale(20%);
+            transition: 0.3s all ease;
+            box-shadow: 0 4px 10px rgba(0, 72, 255, 0.3);
+        }
+
+        .card:hover {
+            cursor: pointer;
+            opacity: 1;
+            filter: grayscale(0);
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(0, 132, 255, 0.5);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Combined Effects</h2>
+        <p>Hover me to see all effects together</p>
+    </div>
+</body>
+</html>

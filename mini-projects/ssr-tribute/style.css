@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F9FF;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #B8E6FE;
+    width: 100%;
+}
+
+header h1 {
+    padding: 10px;
+    font-size: 28px;
+}
+section {
+    margin: 20px 0;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    background-color: #DFF2FE;
+}
+
+section > img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s all ease;
+}
+
+section img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+section > p {
+    margin-bottom: 0;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+

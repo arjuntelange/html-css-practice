@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="5UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing Text and Units</title>
+    <style>
+        html {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .main-container {
+            font-size: 20px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 350px;
+            height: 100px;
+            margin: 30px;
+            border: 1px solid gray;
+            text-align: center;
+        }
+
+        .decorated-paragraph {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+        }
+
+        .container-px {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .container-em {
+            font-size: 1.5em;
+            text-transform: capitalize;
+        }
+
+        .container-rem {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Understanding CSS Units</h1>
+    <hr>
+
+    <p class="simple-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Atque rerum quod architecto magni? Eos cumque, repudiandae,
+        earum maxime praesentium nesciunt beatae quas esse ipsam sed vero reprehenderit cum voluptate culpa.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id maxime minima cumque facere accusantium dicta?
+        Veniam,
+        itaque? Fugit cupiditate quos nulla odit, molestias repudiandae, quis nisi sed laudantium, quas ex?
+    </p>
+    <p class="decorated-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Atque rerum quod architecto magni? Eos cumque, repudiandae,
+        earum maxime praesentium nesciunt beatae quas esse ipsam sed vero reprehenderit cum voluptate culpa.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id maxime minima cumque facere accusantium dicta?
+        Veniam,
+        itaque? Fugit cupiditate quos nulla odit, molestias repudiandae, quis nisi sed laudantium, quas ex?
+    </p>
+    <hr>
+
+    <div class="main-container">
+        <div class="container container-px">
+            This is 18px text
+        </div>
+        <div class="container container-em">
+            This is 1.5em(of 20px) text
+        </div>
+        <div class="container container-rem">
+            This is 1.5rem(of 18px) text
+        </div>
+    </div>
+    <hr>
+
+    <h2>Responsive Text</h2>
+    <hr>
+</body>
+
+</html>
