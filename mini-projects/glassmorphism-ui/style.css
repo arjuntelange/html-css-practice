@@ -78,6 +78,8 @@ body {
 .main {
     margin-top: 80px;
     max-width: 500px;
+
+    animation: text-appear 2s  ease;
 }
 
 
@@ -120,14 +122,40 @@ body {
     bottom: 40px;
     right: 80px;
     width: 350px;
+
+    animation: pot-rotate 2s ease
 }
 
+@keyframes text-appear {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pot-rotate {
+    from {
+        opacity: 0;
+        transform: skewX(10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: skewX(0);
+    }
+}
 
 @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
